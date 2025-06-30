@@ -1,0 +1,133 @@
+✅  (Courier Tracking System)
+
+> Build a courier tracking system using a provided HTML template.
+The system must support two interfaces:
+
+A public-facing user flow for tracking packages.
+
+A private admin dashboard (not visible on the frontend) for managing package data.
+
+
+🚫 Do NOT use Supabase.
+All data (users, packages, settings) must be stored in a server-side JSON-based database (e.g., LowDB or flat file).
+
+
+
+
+---
+
+✅ Functional Requirements
+
+👤 USER SIDE:
+
+1. Users can:
+
+Visit the homepage or dedicated track.html page.
+
+Enter a tracking number.
+
+View detailed package info if it exists.
+
+
+
+2. The tracking result should display:
+
+Sender and receiver details
+
+Package current location (address + Google Map)
+
+Package status: On Hold, In Transit, Held by Customs, Out for Delivery, Delivered
+
+Admin notes
+
+Package photo (image preview)
+
+
+
+3. Integrate Google Maps API to show the current package location on a live map using latitude and longitude.
+
+
+
+
+---
+
+🔒 ADMIN SIDE:
+
+1. Create a hidden login page at /admin-login. Do not expose this link anywhere on the website UI.
+
+
+2. Admin logs in using credentials stored in users.json.
+
+
+3. After login, admin can:
+
+Create a new package.
+
+Auto-generate a secure, unpredictable tracking number using random alphanumeric strings (e.g., 7F3KJ9ZQ, XR12P7LQ, length 8–10).
+
+Add sender & receiver info, initial status, current location, and admin notes.
+
+Upload and manage a photo of the package.
+
+Update status, map location, and notes at any time.
+
+
+
+4. All package data must be written and read from packages.json.
+
+
+
+
+---
+
+🔐 Security & Validation:
+
+Tracking numbers must be random, non-sequential, and checked for uniqueness in packages.json before saving.
+
+Protect image upload using Multer or equivalent, with file type/size restrictions.
+
+Use session-based authentication for admin access (or JWT).
+
+Admin dashboard is accessible only to logged-in users.
+
+
+
+---
+
+📁 File Structure Suggestions:
+
+/public
+  ├── index.html
+  ├── track.html
+  ├── styles/
+  ├── scripts/
+  └── uploads/ (package images)
+
+ /server
+  ├── db/
+  │    ├── users.json
+  │    └── packages.json
+  ├── routes/
+  │    ├── tracking.js
+  │    ├── admin.js
+  │    └── auth.js
+  ├── controllers/
+  ├── utils/
+  └── app.js
+
+
+---
+
+🧠 Key Features Summary:
+
+Server-side JSON DB (no external databases)
+
+Hidden, secure admin dashboard
+
+Unpredictable tracking number generation
+
+Google Maps integration
+
+Package photo support
+
+Dynamic tracking display for users

@@ -1,0 +1,139 @@
+[
+  {
+    "id": 1,
+    "trackingNumber": "7F3KJ9ZQ",
+    "status": "In Transit",
+    "sender": {
+      "name": "TechStore Ltd",
+      "address": "123 Business Ave, San Francisco, CA 94105"
+    },
+    "receiver": {
+      "name": "John Smith",
+      "address": "456 Oak Street, New York, NY 10001"
+    },
+    "currentLocation": {
+      "address": "Denver Distribution Center, Denver, CO 80202",
+      "lat": 39.7392,
+      "lng": -104.9903
+    },
+    "packageDetails": {
+      "type": "Electronics",
+      "weight": "2.5 kg",
+      "height": "15 cm",
+      "color": "Black"
+    },
+    "adminNotes": "Package in transit from West Coast distribution center. Expected delivery in 2-3 business days.",
+    "createdAt": "2024-12-29T10:00:00.000Z",
+    "updatedAt": "2024-12-29T16:30:00.000Z"
+  },
+  {
+    "id": 2,
+    "trackingNumber": "XR12P7LQ",
+    "status": "Out for Delivery",
+    "sender": {
+      "name": "Fashion Boutique",
+      "address": "789 Style Street, Los Angeles, CA 90210"
+    },
+    "receiver": {
+      "name": "Sarah Johnson",
+      "address": "321 Pine Road, Chicago, IL 60601"
+    },
+    "currentLocation": {
+      "address": "Chicago Local Delivery Hub, Chicago, IL 60601",
+      "lat": 41.8781,
+      "lng": -87.6298
+    },
+    "packageDetails": {
+      "type": "Clothing",
+      "weight": "0.8 kg",
+      "height": "5 cm",
+      "color": "Red"
+    },
+    "adminNotes": "Package out for delivery. Delivery scheduled for today between 2-6 PM.",
+    "createdAt": "2024-12-28T08:15:00.000Z",
+    "updatedAt": "2024-12-29T09:45:00.000Z"
+  },
+  {
+    "id": 3,
+    "trackingNumber": "M8N4K2WP",
+    "status": "Delivered",
+    "sender": {
+      "name": "Electronics World",
+      "address": "555 Tech Drive, Austin, TX 78701"
+    },
+    "receiver": {
+      "name": "Mike Davis",
+      "address": "888 Main Street, Boston, MA 02101"
+    },
+    "currentLocation": {
+      "address": "888 Main Street, Boston, MA 02101",
+      "lat": 42.3601,
+      "lng": -71.0589
+    },
+    "packageDetails": {
+      "type": "Computer Hardware",
+      "weight": "4.2 kg",
+      "height": "25 cm",
+      "color": "Silver"
+    },
+    "adminNotes": "Package successfully delivered and signed for by recipient at 2:45 PM.",
+    "createdAt": "2024-12-27T14:20:00.000Z",
+    "updatedAt": "2024-12-29T14:45:00.000Z"
+  },
+  {
+    "status": "On Hold",
+    "sender": {
+      "name": "Gary Melvin ",
+      "address": "8901 Freedom Road, Houston Texas 30001"
+    },
+    "receiver": {
+      "name": "Richmond Tale",
+      "address": "8761 Sunshine Ray, NewYork city NewYork. "
+    },
+    "currentLocation": {
+      "address": "London, United Kingdom",
+      "lat": 0.1825,
+      "lng": 0.5243
+    },
+    "packageDetails": {
+      "type": "A Box",
+      "weight": "22kg",
+      "height": "10cm",
+      "color": "Brown"
+    },
+    "adminNotes": "Package is out for delivery. ",
+    "id": 4,
+    "trackingNumber": "A5I1FTLC",
+    "createdAt": "2025-06-29T17:11:20.849Z",
+    "updatedAt": "2025-06-29T17:11:20.852Z",
+    "photo": "A5I1FTLC.jpg"
+  },
+  {
+    "status": "On Hold",
+    "sender": {
+      "name": "Dr. Ernesto Zulauf",
+      "address": "650 Grand Ave\r\nCity/Town: St Paul\r\nState/Province/Region: Minnesota\r\nZip/Postal Code: 55105\r\nCountry: United States"
+    },
+    "receiver": {
+      "name": "Grover Hermann",
+      "address": "5233 Sunset Blvd\r\nCity/Town: Los Angeles\r\nState/Province/Region: California\r\nZip/Postal Code: 90027\r\nCountry: United States"
+    },
+    "currentLocation": {
+      "address": "KHabarovska Vul., bld. 7/Б, appt. 45 Kirovograd, Kirovogradskaya oblast, Ukraine",
+      "lat": 0,
+      "lng": 0
+    },
+    "packageDetails": {
+      "type": "A Box",
+      "weight": "22kg",
+      "height": "12cm",
+      "color": "brown"
+    },
+    "adminNotes": "Package is currently awaiting payment of delivery fee before package can be sent out for delivery. ",
+    "id": 5,
+    "trackingNumber": "OKZRZNSC",
+    "createdAt": "2025-06-29T20:13:53.045Z",
+    "updatedAt": "2025-06-29T20:13:53.047Z",
+    "photo": "OKZRZNSC.jpg"
+  }
+]
